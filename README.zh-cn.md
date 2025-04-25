@@ -1,4 +1,4 @@
-[ENGLISH](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/README.zh-cn.md)
+[ENGLISH](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/README.md)
 
 # 介绍
 
