@@ -3,7 +3,7 @@
   "author": "Jeremy Zhao",
   "license": "MIT",
   "version": "0.0.1",
-  "description": "A Rollup plugin that packs multiple SVG icon files into a single SVG sprite, reducing HTTP requests and improving frontend performance. Perfect for icon-heavy projects.",
+  "description": "A Rollup plugin for minifying and compressing all SVG files in a specified folder and combining them into an SVG symbol.",
   "keywords": [
     "rollup",
     "rollup-plugin",
@@ -25,9 +25,6 @@
   "main": "./dist/rollup-plugin-svgpack.js",
   "types": "./dist/rollup-plugin-svgpack.d.ts",
   "type": "module",
-  "publishConfig": {
-    "registry": "http://10.1.20.30:8081/repository/npm-hosted/"
-  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/fs-extra": "^11.0.4",

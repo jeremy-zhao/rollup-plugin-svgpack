@@ -39,7 +39,7 @@ export default defineConfig({
 
 ## Using SVG Tag
 
-Source SVG file: `src/lib/symbol/github.svg`  
+Source SVG file: `src/lib/symbol/github.svg`
 Target file: `static/icons/symbol.svg`
 
 ```html
