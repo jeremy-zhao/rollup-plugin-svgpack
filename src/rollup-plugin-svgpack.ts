@@ -7,7 +7,7 @@ import svgstore from 'svgstore'
 
 /** Svg 文件打包配置 */
 interface SvgPackOption {
-  /** 文件夹 */
+  /** 源文件夹 */
   from: string | string[]
   /** 目标文件 */
   to: string
@@ -83,7 +83,7 @@ export default function svgpack(
         // 如果 result 中有 fill 属性，属性值不为 none/currentColor, 则移除 fill
         result.data = result.data.replace(/fill="[^(none|currentColor)].*?"/g, '')
 
-        // 如果 result 中有 stroke 属性，属性值不为 none, 则移除 stroke
+        // 如果 result 中有 stroke 属性，属性值不为 none/currentColor, 则移除 stroke
         result.data = result.data.replace(/stroke="[^(none|currentColor)].*?"/g, '')
 
         // 将优化后的 svg 添加到 sprites 中
