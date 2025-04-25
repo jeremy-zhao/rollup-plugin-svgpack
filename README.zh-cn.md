@@ -2,7 +2,7 @@
 
 # 介绍
 
-一个 Rolup 插件，用于将指定文件夹内的所有 SVG 精简压缩，并组合为一个 [SVG symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol)。
+一个 Rollup 插件，用于将指定文件夹内的所有 SVG 精简压缩，并组合为一个 [SVG symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol)。
 
 此插件通常用于打包图标文件，以减少 HTTP 请求的文件数量，提高前端性能。
 
