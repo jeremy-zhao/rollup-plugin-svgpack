@@ -84,4 +84,4 @@ rollup-plugin-svgpack 插件会按照以下策略调整您的 svg 文件
 
 # 许可证
 
-本项目基于 [MIT 许可证]
+本项目基于 [MIT 许可证](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/LICENSE)
