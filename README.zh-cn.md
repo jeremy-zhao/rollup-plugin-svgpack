@@ -1,3 +1,5 @@
+[ENGLISH](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/README.zh-cn.md)
+
 # 介绍
 
 一个 Rolup 插件，用于将指定文件夹内的所有 SVG 精简压缩，并组合为一个 [SVG symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol)。

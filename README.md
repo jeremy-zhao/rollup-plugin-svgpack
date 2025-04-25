@@ -1,3 +1,5 @@
+[中文](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/README.zh-cn.md)
+
 # Introduction
 
 A Rollup plugin for minifying and compressing all SVG files in a specified folder and combining them into an [SVG symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol).
@@ -82,4 +84,4 @@ This strategy removes predefined colors in SVGs. You can define colors for icons
 
 # License
 
-This project is licensed under the [MIT License].
+This project is licensed under the [MIT License](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/LICENSE).
