@@ -1,18 +1,20 @@
+# rollup-plugin-svgpack
+
 [ENGLISH](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/README.md)
 
-# 介绍
+## 介绍
 
 一个 Rollup 插件，用于将指定文件夹内的所有 SVG 精简压缩，并组合为一个 [SVG symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol)。
 
 此插件通常用于打包图标文件，以减少 HTTP 请求的文件数量，提高前端性能。
 
-# 安装
+## 安装
 
 ```sh
 npm i rollup-plugin-svgpack -D
 ```
 
-# 使用
+## 使用
 
 在 vite.config.js 中配置：
 
@@ -24,22 +26,22 @@ export default defineConfig({
 })
 ```
 
-# 配置项
+## 配置项
 
 | 参数    | 类型            | 说明                 | 默认值                                                        |
 | ------- | --------------- | -------------------- | ------------------------------------------------------------- |
 | options | SvgPackOption[] | Svg 打包配置（数组） | `[{ from: 'src/lib/symbol', to: 'static/icons/symbol.svg' }]` |
 
-## SvgPackOption 接口
+### SvgPackOption 接口
 
 | 参数 | 类型               | 说明                                           |
 | ---- | ------------------ | ---------------------------------------------- |
 | from | string \| string[] | 源文件夹。支持多个文件夹打包至同一个 .svg 文件 |
 | to   | string             | 目标文件名                                     |
 
-# [SVG symbol] 的使用方法
+## [SVG symbol] 的使用方法
 
-## 使用 SVG 标签引入
+### 使用 SVG 标签引入
 
 源 svg 文件： src/lib/symbol/github.svg
 目标文件：static/icons/symbol.svg
@@ -51,7 +53,7 @@ export default defineConfig({
 </svg>
 ```
 
-## 使用 Sun Pacakeet 组件库（Svelte 5 移动端 UI 组件库）
+### 使用 Sun Pacakeet 组件库（Svelte 5 移动端 UI 组件库）
 
 ```ts
 // +page.svelte
@@ -62,7 +64,7 @@ import { Icon } from 'sun-parakeet'
 <Icon name="github" size={24} />
 ```
 
-# SVG 文件调整策略
+## SVG 文件调整策略
 
 rollup-plugin-svgpack 插件会按照以下策略调整您的 svg 文件
 
@@ -82,6 +84,6 @@ rollup-plugin-svgpack 插件会按照以下策略调整您的 svg 文件
 }
 ```
 
-# 许可证
+## 许可证
 
 本项目基于 [MIT 许可证](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/LICENSE)

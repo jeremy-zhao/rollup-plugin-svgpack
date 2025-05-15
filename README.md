@@ -1,18 +1,20 @@
+# rollup-plugin-svgpack
+
 [中文](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/README.zh-cn.md)
 
-# Introduction
+## Introduction
 
 A Rollup plugin for minifying and compressing all SVG files in a specified folder and combining them into an [SVG symbol](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/symbol).
 
 This plugin is commonly used for bundling icon files to reduce the number of HTTP requests and improve front-end performance.
 
-# Installation
+## Installation
 
 ```sh
 npm i rollup-plugin-svgpack -D
 ```
 
-# Usage
+## Usage
 
 Configure in `vite.config.js`:
 
@@ -24,22 +26,22 @@ export default defineConfig({
 })
 ```
 
-# Configuration
+## Configuration
 
 | Parameter | Type            | Description                 | Default Value                                                 |
 | --------- | --------------- | --------------------------- | ------------------------------------------------------------- |
 | options   | SvgPackOption[] | SVG bundling config (array) | `[{ from: 'src/lib/symbol', to: 'static/icons/symbol.svg' }]` |
 
-## SvgPackOption Interface
+### SvgPackOption Interface
 
 | Parameter | Type               | Description                                                                  |
 | --------- | ------------------ | ---------------------------------------------------------------------------- |
 | from      | string \| string[] | Source folder(s). Supports bundling multiple folders into a single .svg file |
 | to        | string             | Target filename                                                              |
 
-# [SVG symbol] Usage
+## [SVG symbol] Usage
 
-## Using SVG Tag
+### Using SVG Tag
 
 Source SVG file: `src/lib/symbol/github.svg`
 Target file: `static/icons/symbol.svg`
@@ -51,7 +53,7 @@ Target file: `static/icons/symbol.svg`
 </svg>
 ```
 
-## Using Sun Parakeet Component Library (Svelte 5 Mobile UI Components)
+### Using Sun Parakeet Component Library (Svelte 5 Mobile UI Components)
 
 ```ts
 // +page.svelte
@@ -62,7 +64,7 @@ import { Icon } from 'sun-parakeet'
 <Icon name="github" size={24} />
 ```
 
-# SVG File Adjustment Strategy
+## SVG File Adjustment Strategy
 
 The `rollup-plugin-svgpack` plugin adjusts your SVG files with the following strategy:
 
@@ -82,6 +84,6 @@ This strategy removes predefined colors in SVGs. You can define colors for icons
 }
 ```
 
-# License
+## License
 
 This project is licensed under the [MIT License](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/LICENSE).

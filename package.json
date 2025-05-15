@@ -2,7 +2,7 @@
   "name": "rollup-plugin-svgpack",
   "author": "Jeremy Zhao",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Rollup plugin for minifying and compressing all SVG files in a specified folder and combining them into an SVG symbol.",
   "keywords": [
     "rollup",
@@ -25,6 +25,9 @@
   "main": "./dist/rollup-plugin-svgpack.js",
   "types": "./dist/rollup-plugin-svgpack.d.ts",
   "type": "module",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^12.1.2",
     "@types/fs-extra": "^11.0.4",
