@@ -1,6 +1,6 @@
 # rollup-plugin-svgpack
 
-[ENGLISH](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/master/README.md)
+[ENGLISH](https://github.com/jeremy-zhao/rollup-plugin-svgpack/blob/main/README.md)
 
 ## 介绍
 
